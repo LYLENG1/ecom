@@ -2,6 +2,8 @@ import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { ShopContaxt } from "../context/ShopContext";
 import {CartContext} from "../context/CartContext";
+import logo from '../assets/images/icons/logo-01.png';
+
 
 const Header = ({ toggleCart }) => {
   const { setShowSearch, navigate } = useContext(ShopContaxt);
@@ -45,8 +47,9 @@ const Header = ({ toggleCart }) => {
           <nav className="limiter-menu-desktop container">
             {/* Logo desktop */}
             <a href="#" className="logo">
-              <img src="./src/assets/images/icons/logo-01.png" alt="IMG-LOGO" />
-            </a>
+             <img src={logo} alt="IMG-LOGO" />
+</a>
+
 
             {/* Menu desktop */}
             <div className="menu-desktop">
