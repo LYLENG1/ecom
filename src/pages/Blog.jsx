@@ -1,11 +1,18 @@
 import React from 'react';
+import blog04 from '../assets/images/blog-04.jpg';
+import blog05 from '../assets/images/blog-05.jpg';
+import blog06 from '../assets/images/blog-06.jpg';
+import bg02 from '../assets/images/bg-02.jpg';
+import productMin01 from '../assets/images/product-min-01.jpg';
+import productMin02 from '../assets/images/product-min-02.jpg';
+import productMin03 from '../assets/images/product-min-03.jpg';
 
 const Blog = () => {
   return (
     <div>
       <section
         className="bg-img1 txt-center p-lr-15 p-tb-92"
-        style={{ backgroundImage: 'url(./src/assets/images/bg-02.jpg)' }}
+        style={{ backgroundImage: `url(${bg02})` }}
       >
         <h2 className="ltext-105 cl0 txt-center">Blog</h2>
       </section>
@@ -19,21 +26,21 @@ const Blog = () => {
                 {/* Blog items */}
                 {[
                   {
-                    image: './src/assets/images/blog-04.jpg',
+                    image: blog04,
                     date: '22 Jan 2018',
                     title: '8 Inspiring Ways to Wear Dresses in the Winter',
                     description: 'Class aptent taciti sociosqu ad litora torquent...',
                     comments: '8 Comments',
                   },
                   {
-                    image: './src/assets/images/blog-05.jpg',
+                    image: blog05,
                     date: '18 Jan 2018',
                     title: 'The Great Big List of Men’s Gifts for the Holidays',
                     description: 'Class aptent taciti sociosqu ad litora torquent...',
                     comments: '8 Comments',
                   },
                   {
-                    image: './src/assets/images/blog-06.jpg',
+                    image: blog06,
                     date: '16 Jan 2018',
                     title: '5 Winter-to-Spring Fashion Trends to Try Now',
                     description: 'Class aptent taciti sociosqu ad litora torquent...',
@@ -122,9 +129,9 @@ const Blog = () => {
                   <h4 className="mtext-112 cl2 p-b-33">Featured Products</h4>
                   <ul>
                     {[
-                      { img: './src/assets/images/product-min-01.jpg', name: 'White Shirt With Pleat Detail Back', price: '$19.00' },
-                      { img: './src/assets/images/product-min-02.jpg', name: 'Converse All Star Hi Black Canvas', price: '$39.00' },
-                      { img: './src/assets/images/product-min-03.jpg', name: 'Nixon Porter Leather Watch In Tan', price: '$17.00' },
+                      { img: productMin01, name: 'White Shirt With Pleat Detail Back', price: '$19.00' },
+                      { img: productMin02, name: 'Converse All Star Hi Black Canvas', price: '$39.00' },
+                      { img: productMin03, name: 'Nixon Porter Leather Watch In Tan', price: '$17.00' },
                     ].map((product, index) => (
                       <li className="flex-w flex-t p-b-30" key={index}>
                         <a href="#" className="wrao-pic-w size-214 hov-ovelay1 m-r-20">
@@ -139,39 +146,6 @@ const Blog = () => {
                       </li>
                     ))}
                   </ul>
-                </div>
-
-                {/* Archive */}
-                <div className="p-t-55">
-                  <h4 className="mtext-112 cl2 p-b-20">Archive</h4>
-                  <ul>
-                    {['July 2018', 'June 2018', 'May 2018', 'April 2018', 'March 2018', 'February 2018'].map(
-                      (month, index) => (
-                        <li className="p-b-7" key={index}>
-                          <a href="#" className="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
-                            <span>{month}</span>
-                            <span>(9)</span>
-                          </a>
-                        </li>
-                      )
-                    )}
-                  </ul>
-                </div>
-
-                {/* Tags */}
-                <div className="p-t-50">
-                  <h4 className="mtext-112 cl2 p-b-27">Tags</h4>
-                  <div className="flex-w m-r--5">
-                    {['Fashion', 'Beauty', 'StreetStyle', 'LifeStyle', 'DIY'].map((tag, index) => (
-                      <a
-                        href="#"
-                        className="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
-                        key={index}
-                      >
-                        {tag}
-                      </a>
-                    ))}
-                  </div>
                 </div>
               </div>
             </div>
