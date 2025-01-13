@@ -1,5 +1,7 @@
 import React from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import bg01 from "../assets/images/bg-01.jpg";
+import emailIcon from "../assets/images/icons/icon-email.png";
 
 const Contact = () => {
   return (
@@ -7,7 +9,7 @@ const Contact = () => {
       {/* Hero Section */}
       <section
         className="bg-img1 txt-center p-lr-15 p-tb-92"
-        style={{ backgroundImage: "url('./src/assets/images/bg-01.jpg')" }}
+        style={{ backgroundImage: `url(${bg01})` }}
       >
         <h2 className="ltext-105 cl0 txt-center">Contact</h2>
       </section>
@@ -31,7 +33,7 @@ const Contact = () => {
                   />
                   <img
                     className="how-pos4 pointer-none"
-                    src="./src/assets/images/icons/icon-email.png"
+                    src={emailIcon}
                     alt="Email Icon"
                   />
                 </div>
@@ -91,33 +93,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-
-      {/* Map Section */}
-      <div className="map">
-        {/* <div
-          className="size-303"
-          id="google_map"
-          data-map-x="40.691446"
-          data-map-y="-73.886787"
-          data-pin="images/icons/pin.png"
-          data-scrollwhell="0"
-          data-draggable="1"
-          data-zoom="11"
-        > */}
-          {/* Add Google Map integration here */}
-          {/* <div className="map">
-            <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
-              <GoogleMap
-                mapContainerStyle={mapContainerStyle}
-                center={center}
-                zoom={11}
-              >
-                <Marker position={markerPosition} />
-              </GoogleMap>
-            </LoadScript>
-          </div>
-        </div> */}
-      </div>
     </div>
   );
 };

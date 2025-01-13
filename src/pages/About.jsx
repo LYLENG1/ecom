@@ -1,4 +1,7 @@
 import React from "react";
+import bg01 from "../assets/images/bg-01.jpg";
+import about01 from "../assets/images/about-01.jpg";
+import about02 from "../assets/images/about-02.jpg";
 
 function About() {
   return (
@@ -6,7 +9,7 @@ function About() {
       {/* Hero Section */}
       <section
         className="bg-img1 txt-center p-lr-15 p-tb-92"
-        style={{ backgroundImage: "url('./src/assets/images/bg-01.jpg')" }}
+        style={{ backgroundImage: `url(${bg01})` }}
       >
         <h2 className="ltext-105 cl0 txt-center">About</h2>
       </section>
@@ -46,7 +49,7 @@ function About() {
             <div className="col-11 col-md-5 col-lg-4 m-lr-auto">
               <div className="how-bor1">
                 <div className="hov-img0">
-                  <img src="./src/assets/images/about-01.jpg" alt="Our Story" />
+                  <img src={about01} alt="Our Story" />
                 </div>
               </div>
             </div>
@@ -79,10 +82,7 @@ function About() {
             <div className="order-md-1 col-11 col-md-5 col-lg-4 m-lr-auto p-b-30">
               <div className="how-bor2">
                 <div className="hov-img0">
-                  <img
-                    src="./src/assets/images/about-02.jpg"
-                    alt="Our Mission"
-                  />
+                  <img src={about02} alt="Our Mission" />
                 </div>
               </div>
             </div>
